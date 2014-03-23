@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6214B75403E340D2809ADFB8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BF83E80E5A492682820785 /* libPods.a */; };
+		6EBF51FD18DED66800D7A04A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBF51FC18DED66800D7A04A /* Foundation.framework */; };
+		6EBF51FF18DED66800D7A04A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBF51FE18DED66800D7A04A /* CoreGraphics.framework */; };
+		6EBF520118DED66800D7A04A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBF520018DED66800D7A04A /* UIKit.framework */; };
+		6EBF520718DED66800D7A04A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EBF520518DED66800D7A04A /* InfoPlist.strings */; };
+		6EBF520918DED66800D7A04A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF520818DED66800D7A04A /* main.m */; };
+		6EBF520D18DED66800D7A04A /* RCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF520C18DED66800D7A04A /* RCAppDelegate.m */; };
+		6EBF521018DED66800D7A04A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EBF520E18DED66800D7A04A /* Main_iPhone.storyboard */; };
+		6EBF521318DED66800D7A04A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EBF521118DED66800D7A04A /* Main_iPad.storyboard */; };
+		6EBF521618DED66800D7A04A /* RCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF521518DED66800D7A04A /* RCViewController.m */; };
+		6EBF521818DED66800D7A04A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EBF521718DED66800D7A04A /* Images.xcassets */; };
+		6EBF521F18DED66800D7A04A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBF521E18DED66800D7A04A /* XCTest.framework */; };
+		6EBF522018DED66800D7A04A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBF51FC18DED66800D7A04A /* Foundation.framework */; };
+		6EBF522118DED66800D7A04A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBF520018DED66800D7A04A /* UIKit.framework */; };
+		6EBF522918DED66800D7A04A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EBF522718DED66800D7A04A /* InfoPlist.strings */; };
+		6EBF522B18DED66800D7A04A /* WiFiNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF522A18DED66800D7A04A /* WiFiNoteTests.m */; };
+		6EBF523718DEDCBC00D7A04A /* RCHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF523618DEDCBC00D7A04A /* RCHTTPServer.m */; };
+		6EBF523A18DEE23900D7A04A /* WWWROOT in Resources */ = {isa = PBXBuildFile; fileRef = 6EBF523918DEE23900D7A04A /* WWWROOT */; };
+		6EBF523D18DF02B200D7A04A /* RCHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF523C18DF02B200D7A04A /* RCHTTPConnection.m */; };
+		6EBF524018DF182F00D7A04A /* RCHTTPParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF523F18DF182F00D7A04A /* RCHTTPParams.m */; };
+		6EBF524418DF308500D7A04A /* RCDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF524318DF308500D7A04A /* RCDatabase.m */; };
+		6EBF524818DF360F00D7A04A /* RCToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF524718DF360F00D7A04A /* RCToolKit.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EBF522218DED66800D7A04A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EBF51F118DED66800D7A04A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EBF51F818DED66800D7A04A;
+			remoteInfo = WiFiNote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C6D3D1944F94427B0FCC241 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		6EBF51F918DED66800D7A04A /* WiFiNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiFiNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EBF51FC18DED66800D7A04A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6EBF51FE18DED66800D7A04A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6EBF520018DED66800D7A04A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6EBF520418DED66800D7A04A /* WiFiNote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WiFiNote-Info.plist"; sourceTree = "<group>"; };
+		6EBF520618DED66800D7A04A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6EBF520818DED66800D7A04A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6EBF520A18DED66800D7A04A /* WiFiNote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WiFiNote-Prefix.pch"; sourceTree = "<group>"; };
+		6EBF520B18DED66800D7A04A /* RCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCAppDelegate.h; sourceTree = "<group>"; };
+		6EBF520C18DED66800D7A04A /* RCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCAppDelegate.m; sourceTree = "<group>"; };
+		6EBF520F18DED66800D7A04A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		6EBF521218DED66800D7A04A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		6EBF521418DED66800D7A04A /* RCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCViewController.h; sourceTree = "<group>"; };
+		6EBF521518DED66800D7A04A /* RCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCViewController.m; sourceTree = "<group>"; };
+		6EBF521718DED66800D7A04A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6EBF521D18DED66800D7A04A /* WiFiNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiFiNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EBF521E18DED66800D7A04A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6EBF522618DED66800D7A04A /* WiFiNoteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WiFiNoteTests-Info.plist"; sourceTree = "<group>"; };
+		6EBF522818DED66800D7A04A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6EBF522A18DED66800D7A04A /* WiFiNoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WiFiNoteTests.m; sourceTree = "<group>"; };
+		6EBF523518DEDCBC00D7A04A /* RCHTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCHTTPServer.h; sourceTree = "<group>"; };
+		6EBF523618DEDCBC00D7A04A /* RCHTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCHTTPServer.m; sourceTree = "<group>"; };
+		6EBF523918DEE23900D7A04A /* WWWROOT */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WWWROOT; sourceTree = SOURCE_ROOT; };
+		6EBF523B18DF02B200D7A04A /* RCHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCHTTPConnection.h; sourceTree = "<group>"; };
+		6EBF523C18DF02B200D7A04A /* RCHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCHTTPConnection.m; sourceTree = "<group>"; };
+		6EBF523E18DF182F00D7A04A /* RCHTTPParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCHTTPParams.h; sourceTree = "<group>"; };
+		6EBF523F18DF182F00D7A04A /* RCHTTPParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCHTTPParams.m; sourceTree = "<group>"; };
+		6EBF524218DF308500D7A04A /* RCDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCDatabase.h; sourceTree = "<group>"; };
+		6EBF524318DF308500D7A04A /* RCDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCDatabase.m; sourceTree = "<group>"; };
+		6EBF524618DF360F00D7A04A /* RCToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCToolKit.h; sourceTree = "<group>"; };
+		6EBF524718DF360F00D7A04A /* RCToolKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCToolKit.m; sourceTree = "<group>"; };
+		96BF83E80E5A492682820785 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EBF51F618DED66800D7A04A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EBF51FF18DED66800D7A04A /* CoreGraphics.framework in Frameworks */,
+				6EBF520118DED66800D7A04A /* UIKit.framework in Frameworks */,
+				6EBF51FD18DED66800D7A04A /* Foundation.framework in Frameworks */,
+				6214B75403E340D2809ADFB8 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EBF521A18DED66800D7A04A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EBF521F18DED66800D7A04A /* XCTest.framework in Frameworks */,
+				6EBF522118DED66800D7A04A /* UIKit.framework in Frameworks */,
+				6EBF522018DED66800D7A04A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6EBF51F018DED66800D7A04A = {
+			isa = PBXGroup;
+			children = (
+				6EBF520218DED66800D7A04A /* WiFiNote */,
+				6EBF522418DED66800D7A04A /* WiFiNoteTests */,
+				6EBF51FB18DED66800D7A04A /* Frameworks */,
+				6EBF51FA18DED66800D7A04A /* Products */,
+				1C6D3D1944F94427B0FCC241 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		6EBF51FA18DED66800D7A04A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EBF51F918DED66800D7A04A /* WiFiNote.app */,
+				6EBF521D18DED66800D7A04A /* WiFiNoteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EBF51FB18DED66800D7A04A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EBF51FC18DED66800D7A04A /* Foundation.framework */,
+				6EBF51FE18DED66800D7A04A /* CoreGraphics.framework */,
+				6EBF520018DED66800D7A04A /* UIKit.framework */,
+				6EBF521E18DED66800D7A04A /* XCTest.framework */,
+				96BF83E80E5A492682820785 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EBF520218DED66800D7A04A /* WiFiNote */ = {
+			isa = PBXGroup;
+			children = (
+				6EBF524518DF35EE00D7A04A /* RCToolKit */,
+				6EBF524118DF305900D7A04A /* RCDatabase */,
+				6EBF523818DEE20A00D7A04A /* RCResources */,
+				6EBF523418DEDC6F00D7A04A /* RCHTTP */,
+				6EBF520B18DED66800D7A04A /* RCAppDelegate.h */,
+				6EBF520C18DED66800D7A04A /* RCAppDelegate.m */,
+				6EBF520E18DED66800D7A04A /* Main_iPhone.storyboard */,
+				6EBF521118DED66800D7A04A /* Main_iPad.storyboard */,
+				6EBF521418DED66800D7A04A /* RCViewController.h */,
+				6EBF521518DED66800D7A04A /* RCViewController.m */,
+				6EBF521718DED66800D7A04A /* Images.xcassets */,
+				6EBF520318DED66800D7A04A /* Supporting Files */,
+			);
+			path = WiFiNote;
+			sourceTree = "<group>";
+		};
+		6EBF520318DED66800D7A04A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EBF520418DED66800D7A04A /* WiFiNote-Info.plist */,
+				6EBF520518DED66800D7A04A /* InfoPlist.strings */,
+				6EBF520818DED66800D7A04A /* main.m */,
+				6EBF520A18DED66800D7A04A /* WiFiNote-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EBF522418DED66800D7A04A /* WiFiNoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EBF522A18DED66800D7A04A /* WiFiNoteTests.m */,
+				6EBF522518DED66800D7A04A /* Supporting Files */,
+			);
+			path = WiFiNoteTests;
+			sourceTree = "<group>";
+		};
+		6EBF522518DED66800D7A04A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EBF522618DED66800D7A04A /* WiFiNoteTests-Info.plist */,
+				6EBF522718DED66800D7A04A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EBF523418DEDC6F00D7A04A /* RCHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				6EBF523518DEDCBC00D7A04A /* RCHTTPServer.h */,
+				6EBF523618DEDCBC00D7A04A /* RCHTTPServer.m */,
+				6EBF523B18DF02B200D7A04A /* RCHTTPConnection.h */,
+				6EBF523C18DF02B200D7A04A /* RCHTTPConnection.m */,
+				6EBF523E18DF182F00D7A04A /* RCHTTPParams.h */,
+				6EBF523F18DF182F00D7A04A /* RCHTTPParams.m */,
+			);
+			name = RCHTTP;
+			sourceTree = "<group>";
+		};
+		6EBF523818DEE20A00D7A04A /* RCResources */ = {
+			isa = PBXGroup;
+			children = (
+				6EBF523918DEE23900D7A04A /* WWWROOT */,
+			);
+			name = RCResources;
+			sourceTree = "<group>";
+		};
+		6EBF524118DF305900D7A04A /* RCDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				6EBF524218DF308500D7A04A /* RCDatabase.h */,
+				6EBF524318DF308500D7A04A /* RCDatabase.m */,
+			);
+			name = RCDatabase;
+			sourceTree = "<group>";
+		};
+		6EBF524518DF35EE00D7A04A /* RCToolKit */ = {
+			isa = PBXGroup;
+			children = (
+				6EBF524618DF360F00D7A04A /* RCToolKit.h */,
+				6EBF524718DF360F00D7A04A /* RCToolKit.m */,
+			);
+			name = RCToolKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EBF51F818DED66800D7A04A /* WiFiNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EBF522E18DED66800D7A04A /* Build configuration list for PBXNativeTarget "WiFiNote" */;
+			buildPhases = (
+				BE96765579F6417C9FC67E4F /* Check Pods Manifest.lock */,
+				6EBF51F518DED66800D7A04A /* Sources */,
+				6EBF51F618DED66800D7A04A /* Frameworks */,
+				6EBF51F718DED66800D7A04A /* Resources */,
+				9A77E368500347E7B0FD8424 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiFiNote;
+			productName = WiFiNote;
+			productReference = 6EBF51F918DED66800D7A04A /* WiFiNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6EBF521C18DED66800D7A04A /* WiFiNoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EBF523118DED66800D7A04A /* Build configuration list for PBXNativeTarget "WiFiNoteTests" */;
+			buildPhases = (
+				6EBF521918DED66800D7A04A /* Sources */,
+				6EBF521A18DED66800D7A04A /* Frameworks */,
+				6EBF521B18DED66800D7A04A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EBF522318DED66800D7A04A /* PBXTargetDependency */,
+			);
+			name = WiFiNoteTests;
+			productName = WiFiNoteTests;
+			productReference = 6EBF521D18DED66800D7A04A /* WiFiNoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EBF51F118DED66800D7A04A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = RidgeCorn;
+				TargetAttributes = {
+					6EBF521C18DED66800D7A04A = {
+						TestTargetID = 6EBF51F818DED66800D7A04A;
+					};
+				};
+			};
+			buildConfigurationList = 6EBF51F418DED66800D7A04A /* Build configuration list for PBXProject "WiFiNote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6EBF51F018DED66800D7A04A;
+			productRefGroup = 6EBF51FA18DED66800D7A04A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EBF51F818DED66800D7A04A /* WiFiNote */,
+				6EBF521C18DED66800D7A04A /* WiFiNoteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EBF51F718DED66800D7A04A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EBF521318DED66800D7A04A /* Main_iPad.storyboard in Resources */,
+				6EBF521818DED66800D7A04A /* Images.xcassets in Resources */,
+				6EBF523A18DEE23900D7A04A /* WWWROOT in Resources */,
+				6EBF521018DED66800D7A04A /* Main_iPhone.storyboard in Resources */,
+				6EBF520718DED66800D7A04A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EBF521B18DED66800D7A04A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EBF522918DED66800D7A04A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A77E368500347E7B0FD8424 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE96765579F6417C9FC67E4F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EBF51F518DED66800D7A04A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EBF524418DF308500D7A04A /* RCDatabase.m in Sources */,
+				6EBF524818DF360F00D7A04A /* RCToolKit.m in Sources */,
+				6EBF520918DED66800D7A04A /* main.m in Sources */,
+				6EBF523718DEDCBC00D7A04A /* RCHTTPServer.m in Sources */,
+				6EBF523D18DF02B200D7A04A /* RCHTTPConnection.m in Sources */,
+				6EBF520D18DED66800D7A04A /* RCAppDelegate.m in Sources */,
+				6EBF524018DF182F00D7A04A /* RCHTTPParams.m in Sources */,
+				6EBF521618DED66800D7A04A /* RCViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EBF521918DED66800D7A04A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EBF522B18DED66800D7A04A /* WiFiNoteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EBF522318DED66800D7A04A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EBF51F818DED66800D7A04A /* WiFiNote */;
+			targetProxy = 6EBF522218DED66800D7A04A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6EBF520518DED66800D7A04A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EBF520618DED66800D7A04A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6EBF520E18DED66800D7A04A /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EBF520F18DED66800D7A04A /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		6EBF521118DED66800D7A04A /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EBF521218DED66800D7A04A /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		6EBF522718DED66800D7A04A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EBF522818DED66800D7A04A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6EBF522C18DED66800D7A04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6EBF522D18DED66800D7A04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EBF522F18DED66800D7A04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C6D3D1944F94427B0FCC241 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiFiNote/WiFiNote-Prefix.pch";
+				INFOPLIST_FILE = "WiFiNote/WiFiNote-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6EBF523018DED66800D7A04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C6D3D1944F94427B0FCC241 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiFiNote/WiFiNote-Prefix.pch";
+				INFOPLIST_FILE = "WiFiNote/WiFiNote-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6EBF523218DED66800D7A04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WiFiNote.app/WiFiNote";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiFiNote/WiFiNote-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WiFiNoteTests/WiFiNoteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6EBF523318DED66800D7A04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WiFiNote.app/WiFiNote";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiFiNote/WiFiNote-Prefix.pch";
+				INFOPLIST_FILE = "WiFiNoteTests/WiFiNoteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EBF51F418DED66800D7A04A /* Build configuration list for PBXProject "WiFiNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EBF522C18DED66800D7A04A /* Debug */,
+				6EBF522D18DED66800D7A04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EBF522E18DED66800D7A04A /* Build configuration list for PBXNativeTarget "WiFiNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EBF522F18DED66800D7A04A /* Debug */,
+				6EBF523018DED66800D7A04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EBF523118DED66800D7A04A /* Build configuration list for PBXNativeTarget "WiFiNoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EBF523218DED66800D7A04A /* Debug */,
+				6EBF523318DED66800D7A04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6EBF51F118DED66800D7A04A /* Project object */;
+}
