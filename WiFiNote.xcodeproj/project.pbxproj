@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6214B75403E340D2809ADFB8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BF83E80E5A492682820785 /* libPods.a */; };
+		6EB621CC18E089CF00E7530D /* RCNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB621CB18E089CF00E7530D /* RCNote.m */; };
 		6EBF51FD18DED66800D7A04A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBF51FC18DED66800D7A04A /* Foundation.framework */; };
 		6EBF51FF18DED66800D7A04A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBF51FE18DED66800D7A04A /* CoreGraphics.framework */; };
 		6EBF520118DED66800D7A04A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBF520018DED66800D7A04A /* UIKit.framework */; };
@@ -29,6 +30,7 @@
 		6EBF524018DF182F00D7A04A /* RCHTTPParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF523F18DF182F00D7A04A /* RCHTTPParams.m */; };
 		6EBF524418DF308500D7A04A /* RCDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF524318DF308500D7A04A /* RCDatabase.m */; };
 		6EBF524818DF360F00D7A04A /* RCToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF524718DF360F00D7A04A /* RCToolKit.m */; };
+		6EBF527818E07B8600D7A04A /* RCNoteModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF527618E07B8600D7A04A /* RCNoteModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		1C6D3D1944F94427B0FCC241 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		6EB621CA18E089CF00E7530D /* RCNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCNote.h; sourceTree = "<group>"; };
+		6EB621CB18E089CF00E7530D /* RCNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCNote.m; sourceTree = "<group>"; };
 		6EBF51F918DED66800D7A04A /* WiFiNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiFiNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EBF51FC18DED66800D7A04A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6EBF51FE18DED66800D7A04A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,6 +78,7 @@
 		6EBF524318DF308500D7A04A /* RCDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCDatabase.m; sourceTree = "<group>"; };
 		6EBF524618DF360F00D7A04A /* RCToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCToolKit.h; sourceTree = "<group>"; };
 		6EBF524718DF360F00D7A04A /* RCToolKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCToolKit.m; sourceTree = "<group>"; };
+		6EBF527718E07B8600D7A04A /* RCNoteModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RCNoteModel.xcdatamodel; sourceTree = "<group>"; };
 		96BF83E80E5A492682820785 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -208,6 +213,9 @@
 			children = (
 				6EBF524218DF308500D7A04A /* RCDatabase.h */,
 				6EBF524318DF308500D7A04A /* RCDatabase.m */,
+				6EBF527618E07B8600D7A04A /* RCNoteModel.xcdatamodeld */,
+				6EB621CA18E089CF00E7530D /* RCNote.h */,
+				6EB621CB18E089CF00E7530D /* RCNote.m */,
 			);
 			name = RCDatabase;
 			sourceTree = "<group>";
@@ -356,6 +364,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EB621CC18E089CF00E7530D /* RCNote.m in Sources */,
+				6EBF527818E07B8600D7A04A /* RCNoteModel.xcdatamodeld in Sources */,
 				6EBF524418DF308500D7A04A /* RCDatabase.m in Sources */,
 				6EBF524818DF360F00D7A04A /* RCToolKit.m in Sources */,
 				6EBF520918DED66800D7A04A /* main.m in Sources */,
@@ -592,6 +602,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6EBF527618E07B8600D7A04A /* RCNoteModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6EBF527718E07B8600D7A04A /* RCNoteModel.xcdatamodel */,
+			);
+			currentVersion = 6EBF527718E07B8600D7A04A /* RCNoteModel.xcdatamodel */;
+			path = RCNoteModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6EBF51F118DED66800D7A04A /* Project object */;
 }

@@ -7,16 +7,29 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <FMDatabase.h>
-#import <FMDatabaseAdditions.h>
+#import <CoreData/CoreData.h>
+#import "RCNote.h"
 
-#define RCDBPath [RCToolKit pathInDocumentsWithFile:@"/notebooks.db"]
-#define RCDBTable @"notebook"
+#define RCDBPath [RCToolKit pathInDocumentsWithFile:@"RCNoteModel.sqlite"]
+#define RCDBTable @"RCNote"
 
 @interface RCDatabase : NSObject
 
-+ (void)checkDatabase;
-+ (void)insertNote:(NSString *)note;
-+ (NSArray *)selectAll;
+@property(nonatomic) NSManagedObjectModel *managedObjectModel;
+@property(nonatomic) NSManagedObjectContext *managedObjectContext;
+@property(nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+- (void)launch;
+
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator;
+- (NSManagedObjectModel *)managedObjectModel;
+- (NSManagedObjectContext *)managedObjectContext;
+
+- (void)addNote:(NSString *)note;
+- (NSArray *)queryWithKey:(NSString *)key;
+- (void)updateNote:(RCNote *)note;
+- (void)deleteNote:(RCNote *)note;
+
++ (RCDatabase *)sharedDatabase;
 
 @end

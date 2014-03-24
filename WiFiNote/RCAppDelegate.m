@@ -14,7 +14,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	[DDLog addLogger:[DDTTYLogger sharedInstance]];
-    [RCDatabase checkDatabase];
+    [[RCDatabase sharedDatabase] launch];
     return YES;
 }
 

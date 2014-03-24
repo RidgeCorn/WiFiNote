@@ -56,7 +56,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 		HTTPLogVerbose(@"%@[%p]: postStr: %@", THIS_FILE, self, postStr);
 		
 		RCHTTPParams *params = [[RCHTTPParams alloc] initWithPostData:postData];
-        [RCDatabase insertNote: [params.postDictionary valueForKey:@"note"]];
+        [[RCDatabase sharedDatabase] addNote:[params.postDictionary valueForKey:@"note"]];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"RCANoteHasBeenReceived" object:nil];
 		NSData *response = nil;
         response = [[NSString stringWithFormat:@"<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body><br /><center><h3>%@ Saved!<h3></center><body></html>", params.postString] dataUsingEncoding:NSUTF8StringEncoding];

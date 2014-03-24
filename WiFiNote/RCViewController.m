@@ -73,7 +73,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [RCToolKit calculateTextHeight:[UIFont systemFontOfSize:17] givenText:[_notes objectAtIndex:indexPath.row] givenWidth:[RCToolKit fullScreenWidth] - 30] + 14;
+    return [RCToolKit calculateTextHeight:[UIFont systemFontOfSize:17] givenText:((RCNote *)[_notes objectAtIndex:indexPath.row]).content givenWidth:[RCToolKit fullScreenWidth] - 30] + 14;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -83,7 +83,7 @@
     if ( !noteCell) {
         noteCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
-    [noteCell.textLabel setText:[_notes objectAtIndex:indexPath.row]];
+    [noteCell.textLabel setText:((RCNote *)[_notes objectAtIndex:indexPath.row]).content];
     [noteCell.textLabel setNumberOfLines:(NSInteger)pow(2, 10)];
 
     return noteCell;
@@ -92,14 +92,18 @@
 #pragma mark - table view delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-    pasteboard.string = [_notes objectAtIndex:indexPath.row];
+    RCNote *note = [_notes objectAtIndex:indexPath.row];
+    pasteboard.string = note.content;
+    NSInteger times = [note.times integerValue];
+    [note setTimes:@( ++times)];
+    [[RCDatabase sharedDatabase] updateNote:note];
     [SVProgressHUD showSuccessWithStatus:@"已复制！"];
 }
 
 #pragma mark - refresh
 
 - (void)refreshTableView {
-    _notes = [NSArray arrayWithArray:[RCDatabase selectAll]];
+    _notes = [NSArray arrayWithArray:[[RCDatabase sharedDatabase] queryWithKey:@"date"]];
     [_tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO ];
 }
 @end
