@@ -26,14 +26,14 @@
         NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
         
         NSString *postString = [[NSString alloc] initWithData:_postData encoding:NSUTF8StringEncoding];
-        _postString = [postString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        _postString = [[postString stringByReplacingOccurrencesOfString:@"+" withString:@" "] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         
-        NSArray *keyValues = [_postString componentsSeparatedByString:@"&"];
+        NSArray *keyValues = [postString componentsSeparatedByString:@"&"];
         
         for (NSString *keyValue in keyValues) {
             NSArray *param = [keyValue componentsSeparatedByString:@"="];
             if ([param count] == 2) {
-                [params setObject:param[1] forKey:param[0]];
+                [params setObject:[[param[1]  stringByReplacingOccurrencesOfString:@"+" withString:@" "] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] forKey:param[0]];
             }
         }
         
